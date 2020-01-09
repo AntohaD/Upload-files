@@ -53,7 +53,7 @@ function FilesUpload() {
       return file.name !== name
     }))
 
-    (fileList.length === 1) && setPreviewFiles(false);
+    fileList.length === 1 && setPreviewFiles(false);
   }
 
   return (
