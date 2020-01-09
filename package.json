@@ -6,15 +6,25 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.1",
+    "bootstrap": "^4.4.1",
+    "concurrently": "^5.0.2",
+    "fibers": "^4.0.2",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.0",
+    "popper.js": "^1.16.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "sass": "^1.24.3",
+    "typescript": "^3.7.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "front": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "concurrently \"npm run front\" \"cd backend && nodemon server.js\""
   },
   "eslintConfig": {
     "extends": "react-app"

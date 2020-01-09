@@ -1,5 +1,7 @@
 ## Available Scripts
 
+At the first start, you must enter the npm install command in the root directory and in the backend folder (for the server).
+
 In the project directory, you can run:
 
 ### `npm start`
